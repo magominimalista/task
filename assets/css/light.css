@@ -562,7 +562,6 @@ h1 {
   }
 
   #task-list li {
-    flex-direction: column; /* Muda para layout vertical */
     align-items: flex-start; /* Alinha os itens à esquerda */
   }
 
@@ -572,7 +571,6 @@ h1 {
   }
 
   .logo-container {
-    flex-direction: column; /* Alinha logo e pesquisa em coluna */
     align-items: center; /* Centraliza os elementos horizontalmente */
   }
 
