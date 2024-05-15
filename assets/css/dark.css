@@ -529,3 +529,49 @@ h1 {
   font-size: 10px;
   color: #727272;
 }
+
+/* ... outros estilos ... */
+
+/* Media Query para telas menores (máximo de 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Aumenta a largura do container em telas menores */
+  }
+
+  #task-input input[type="text"],
+  #task-input button {
+    padding: 10px; /* Reduz o padding em telas menores */
+  }
+
+  #task-list li {
+    flex-direction: column; /* Muda para layout vertical em telas menores */
+    align-items: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  #task-list li .category-container,
+  #task-list li button {
+    margin-top: 5px; /* Adiciona espaçamento superior em telas menores */
+  }
+
+  .logo-container {
+    flex-direction: column; /* Alinha logo e pesquisa em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+  }
+
+  .search-container {
+    margin-left: 0; /* Remove a margem esquerda da pesquisa */
+    margin-top: 10px; /* Adiciona margem superior à pesquisa */
+    width: 100%; /* Pesquisa ocupa toda a largura */
+  }
+}
+
+/* Media Query para telas ainda menores (máximo de 480px) */
+@media (max-width: 480px) {
+  #task-input input[type="text"] {
+    margin-bottom: 10px; /* Adiciona margem inferior ao input em telas muito pequenas */
+  }
+
+  #task-input button {
+    width: 100%; /* Botão ocupa toda a largura em telas muito pequenas */
+  }
+}
