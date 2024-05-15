@@ -532,25 +532,34 @@ h1 {
 
 /* ... outros estilos ... */
 
-/* Media Query para telas menores (máximo de 768px) */
+/* Estilos para telas menores (máximo de 768px) */
 @media (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduz o padding do body */
+  }
+
   .container {
     width: 95%; /* Aumenta a largura do container em telas menores */
   }
 
+  h1 {
+    font-size: 24px; /* Reduz o tamanho da fonte do título */
+  }
+
   #task-input input[type="text"],
   #task-input button {
-    padding: 10px; /* Reduz o padding em telas menores */
+    padding: 10px; /* Reduz o padding do input e do botão */
+    font-size: 14px; /* Reduz o tamanho da fonte */
   }
 
   #task-list li {
-    flex-direction: column; /* Muda para layout vertical em telas menores */
+    flex-direction: column; /* Muda para layout vertical */
     align-items: flex-start; /* Alinha os itens à esquerda */
   }
 
   #task-list li .category-container,
   #task-list li button {
-    margin-top: 5px; /* Adiciona espaçamento superior em telas menores */
+    margin-top: 5px; /* Adiciona espaçamento superior */
   }
 
   .logo-container {
@@ -559,19 +568,58 @@ h1 {
   }
 
   .search-container {
-    margin-left: 0; /* Remove a margem esquerda da pesquisa */
-    margin-top: 10px; /* Adiciona margem superior à pesquisa */
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  #search-task {
     width: 100%; /* Pesquisa ocupa toda a largura */
+  }
+
+  .filter-container {
+    flex-direction: column; /* Alinha label e select em coluna */
+    align-items: flex-start; /* Alinha o select à esquerda */
+  }
+
+  .filter-container label {
+    margin-bottom: 5px; /* Adiciona espaçamento inferior ao label */
+  }
+
+  .progress-bar {
+    height: 15px; /* Aumenta a altura da barra de progresso */
+  }
+
+  .empty-task-list {
+    margin-top: 30px; /* Reduz o espaçamento superior da mensagem */
+  }
+
+  .empty-list-image {
+    width: 50%; /* Reduz a largura da imagem */
   }
 }
 
-/* Media Query para telas ainda menores (máximo de 480px) */
+/* Estilos para telas ainda menores (máximo de 480px) */
+
 @media (max-width: 480px) {
   #task-input input[type="text"] {
-    margin-bottom: 10px; /* Adiciona margem inferior ao input em telas muito pequenas */
+    margin-bottom: 10px;
   }
 
   #task-input button {
-    width: 100%; /* Botão ocupa toda a largura em telas muito pequenas */
+    width: 100%;
+  }
+
+  /* Quebra a linha apenas para os botões de edição e exclusão */
+  #task-list li button.edit,
+  #task-list li button.delete {
+    display: block; /* Exibe os botões em blocos */
+    width: 100%; /* Largura total dos botões */
+    margin-top: 5px; /* Adiciona um espaçamento superior */
+  }
+
+  .task-options {
+    right: 0; /* Ajusta a posição do menu de opções */
+    width: 150px; /* Reduz a largura do menu de opções */
   }
 }
