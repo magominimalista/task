@@ -1,5 +1,7 @@
 # ToDo App
 
+Link: https://tarefo.netlify.app/
+
 ## Descrição
 
 Este é um aplicativo simples de lista de tarefas desenvolvido em HTML, CSS e JavaScript. Ele permite que os usuários adicionem, editem, excluam e filtrem tarefas. O aplicativo também possui uma barra de progresso que mostra o progresso das tarefas concluídas em relação ao total de tarefas.
